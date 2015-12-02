@@ -49,9 +49,9 @@
 
 - (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection{
     
-    UITraitCollection *traitCollection = [UITraitCollection traitCollectionWithForceTouchCapability:UIForceTouchCapabilityAvailable];
-    NSLog(@"prev:%d",previousTraitCollection.forceTouchCapability);
-    NSLog(@"curt:%d",traitCollection.forceTouchCapability);
+    //UITraitCollection *traitCollection = [UITraitCollection traitCollectionWithForceTouchCapability:UIForceTouchCapabilityAvailable];
+    NSLog(@"prev:%ld",previousTraitCollection.forceTouchCapability);
+    NSLog(@"curt:%ld", self.traitCollection.forceTouchCapability);
 }
 
 
